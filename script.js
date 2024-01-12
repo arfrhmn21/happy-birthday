@@ -66,7 +66,7 @@ function start() {
     
     setTimeout(() => {
         textDisplay.innerHTML = `
-            wkwkwk gitu aja sih...<br><br>
+            gitu aja sih...<br><br>
 
             tanggapanmu gimana?<br> klik lanjut yaa...
         `;
