@@ -80,7 +80,7 @@ function start() {
     
         function openWhatsApp() {
             var phoneNumber = "+62895703181535";
-            var message = "Halo, saya ingin melanjutkan respon.";
+            var message = "Halooo, Ariff";
             var whatsappURL = "whatsapp://send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
     
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
