@@ -66,12 +66,14 @@ function start() {
     
     setTimeout(() => {
         textDisplay.innerHTML = `
-            wkwkwk gitu aja sih<br>
+            wkwkwk gitu aja sih...<br><br>
+
+            tanggapanmu gimana wkwkwk?<br> klik lanjut yaa...
         `;
     
         const btnNew = document.createElement('button');
     
-        btnNew.innerHTML = "Lanjut respon?";
+        btnNew.innerHTML = "Lanjut";
         content[1].appendChild(btnNew);
     
         btnNew.addEventListener("click", function() {

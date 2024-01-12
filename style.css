@@ -155,6 +155,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     gap: 20px;
     color: #fff;
     font-family: sans-serif;
