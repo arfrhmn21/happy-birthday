@@ -8,7 +8,7 @@ content[0].style.display = "none";
 content[1].style.display = "none";
 
 const text = [
-    "Hai Amall",
+    "Haiii Amall",
     "Selamat Ulang Tahun Yaa!",
     "Doa terbaik pokoknya buat kamuu:)",
     "Kita lost contact lumayan lama yaa?",
