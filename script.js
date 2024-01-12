@@ -12,7 +12,7 @@ const text = [
     "Selamat Ulang Tahun Yaa!",
     "Doa terbaik pokoknya buat kamuu:)",
     "Kita lost contact lumayan lama yaa?",
-    "Tapiii...",
+    "Tapi gatau kenapa...",
     "Aku masih suka sama kamuu:)"
 ];
 
@@ -21,7 +21,7 @@ function start() {
     content[1].style.display = "flex";
     content[2].style.display = "none";
 
-    let detik = 37;
+    let detik = 40;
     timer.textContent = `00 : 00 : ${detik}`;
     
     for (let i = 0; i <= detik; i++) {
@@ -65,11 +65,7 @@ function start() {
     }, 35000);
     
     setTimeout(() => {
-        textDisplay.innerHTML = `
-            gitu aja sih...<br><br>
-
-            tanggapanmu gimana?<br> klik lanjut yaa...
-        `;
+        textDisplay.innerHTML = `klik lanjut yaa...`;
     
         const btnNew = document.createElement('button');
     
@@ -83,7 +79,7 @@ function start() {
     
         function openWhatsApp() {
             var phoneNumber = "+62895703181535";
-            var message = "Halooo ariff";
+            var message = "Halooo";
             var whatsappURL = "whatsapp://send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
     
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
