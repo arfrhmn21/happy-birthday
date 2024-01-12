@@ -10,12 +10,17 @@
 }
 
 body {
+    overflow: hidden;
     background-color: #b9db81;
     height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.content {
+    z-index: 2;
 }
 
 .container {
@@ -173,6 +178,7 @@ body {
     position: absolute;
     font-size: 30px;
     bottom: 30px;
+    z-index: 2;
 }
 
 .overlay-start {
@@ -204,6 +210,31 @@ button {
 
 button:hover {
     background-color: #696464;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100dvh) rotate(360deg);
+    }
+}
+
+.star {
+    position: absolute;
+    top: 0;
+    color: #ad3333;
+    background: transparent;
+    font-size: 25px;
+    animation: fall 5s linear infinite;
+    z-index: 1;
+}
+
+.star::before {
+    content: "★";
+    text-shadow: 
+    0 0 4px #a05656;
 }
 
 

@@ -8,12 +8,13 @@ content[0].style.display = "none";
 content[1].style.display = "none";
 
 const text = [
-    "Haiii Amall",
-    "Selamat Ulang Tahun Yaa!",
-    "Doa terbaik pokoknya buat kamuu:)",
+    "Haloo Amall",
+    "Selamat Ulang Tahun Yaa",
+    "Doa terbaik pokoknya buat kamu:)",
+    "Btw...",
     "Kita lost contact lumayan lama yaa?",
     "Tapi gatau kenapa...",
-    "Aku masih suka sama kamuu:)"
+    "Aku masih suka sama kamu:)"
 ];
 
 function start() {
@@ -21,7 +22,7 @@ function start() {
     content[1].style.display = "flex";
     content[2].style.display = "none";
 
-    let detik = 40;
+    let detik = 38;
     timer.textContent = `00 : 00 : ${detik}`;
     
     for (let i = 0; i <= detik; i++) {
@@ -49,12 +50,28 @@ function start() {
             if (letterIndex === currentText.length) {
                 currentIndex++;
                 letterIndex = 0;
-                setTimeout(animateText, 1500);
+                setTimeout(animateText, 1200);
             } else {
                 setTimeout(animateText, 100);
             }
         }
     }
+
+    function bintang() {
+        const btg = document.createElement("div");
+        btg.classList.add("star");
+        document.body.appendChild(btg);
+    
+        btg.style.left = Math.random() * innerWidth + "px";   
+    
+        setTimeout(() => {
+            document.body.removeChild(btg);
+        }, 5000);
+    }
+    
+    setInterval(() => {
+        bintang()
+    }, 300);
     
     setTimeout(() => {
         animateText();
@@ -65,7 +82,10 @@ function start() {
     }, 35000);
     
     setTimeout(() => {
-        textDisplay.innerHTML = `klik lanjut yaa...`;
+        textDisplay.innerHTML = `
+        Yahh udah selesai:(<br><br>
+        Klik lanjut yaa...
+        `;
     
         const btnNew = document.createElement('button');
     
@@ -74,7 +94,6 @@ function start() {
     
         btnNew.addEventListener("click", function() {
             openWhatsApp();
-            // hai
         });
     
         function openWhatsApp() {
@@ -91,6 +110,7 @@ function start() {
     }, 38000);
     
 }
+
 
 btnStart.onclick = () => {
     audio.play();
