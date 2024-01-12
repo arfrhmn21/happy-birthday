@@ -78,6 +78,7 @@ function start() {
     
         btnNew.addEventListener("click", function() {
             openWhatsApp();
+            // hai
         });
     
         function openWhatsApp() {
