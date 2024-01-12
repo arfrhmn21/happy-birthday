@@ -68,7 +68,7 @@ function start() {
         textDisplay.innerHTML = `
             wkwkwk gitu aja sih...<br><br>
 
-            tanggapanmu gimana wkwkwk?<br> klik lanjut yaa...
+            tanggapanmu gimana?<br> klik lanjut yaa...
         `;
     
         const btnNew = document.createElement('button');
@@ -82,7 +82,7 @@ function start() {
     
         function openWhatsApp() {
             var phoneNumber = "+62895703181535";
-            var message = "Halooo, Ariff";
+            var message = "Halooo ariff";
             var whatsappURL = "whatsapp://send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
     
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
