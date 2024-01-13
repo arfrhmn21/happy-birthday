@@ -22,10 +22,6 @@ body {
     z-index: 2;
 }
 
-.content, .timer {
-    user-select: none;
-}
-
 .container {
     width: 400px;
     height: 400px;
