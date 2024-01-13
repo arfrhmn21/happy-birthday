@@ -5,7 +5,6 @@
 }
 
 * {
-    user-select: none;
     cursor: default;
 }
 
@@ -21,6 +20,10 @@ body {
 
 .content {
     z-index: 2;
+}
+
+.content, .timer {
+    user-select: none;
 }
 
 .container {
