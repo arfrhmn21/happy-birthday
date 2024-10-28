@@ -8,13 +8,12 @@ content[0].style.display = "none";
 content[1].style.display = "none";
 
 const text = [
-    "Haloo Amall",
-    "Selamat Ulang Tahun Yaa",
-    "Doa terbaik pokoknya buat kamu:)",
-    "Btw...",
-    "Kita lost contact lumayan lama yaa?",
-    "Tapi gatau kenapa...",
-    "Aku masih suka sama kamu:)"
+    "Haloo teh",
+    "Sekarang 30 April yaa?",
+    "Selamat ulang tahun Teh Fahiraa",
+    "Doa terbaik pokoknya buat teteh",
+    "Semoga lancar kuliahnyaa",
+    "Berkah rezekinyaa, sehat selalu yaa"
 ];
 
 function start() {
@@ -50,7 +49,7 @@ function start() {
             if (letterIndex === currentText.length) {
                 currentIndex++;
                 letterIndex = 0;
-                setTimeout(animateText, 1200);
+                setTimeout(animateText, 1750);
             } else {
                 setTimeout(animateText, 100);
             }
@@ -71,7 +70,7 @@ function start() {
     
     setInterval(() => {
         bintang()
-    }, 300);
+    }, 100);
     
     setTimeout(() => {
         animateText();
