@@ -3,6 +3,7 @@ const textDisplay = document.querySelector(".text");
 const timer = document.querySelector(".timer");
 const content = document.querySelectorAll(".content");
 const btnStart = document.querySelector("button.starting");
+const wrapper = document.querySelector(".wrapper");
 
 content[0].style.display = "none";
 content[1].style.display = "none";
@@ -59,12 +60,12 @@ function start() {
     function bintang() {
         const btg = document.createElement("div");
         btg.classList.add("star");
-        document.body.appendChild(btg);
+        wrapper.appendChild(btg);
     
         btg.style.left = Math.random() * innerWidth + "px";   
     
         setTimeout(() => {
-            document.body.removeChild(btg);
+            wrapper.removeChild(btg);
         }, 5000);
     }
     
