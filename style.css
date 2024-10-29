@@ -240,5 +240,6 @@ button:hover {
 @media (max-width: 477px) {
     body {
         transform: scale(0.8);
+        overflow: hidden;
     }
 }
