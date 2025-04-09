@@ -43,8 +43,8 @@ function start() {
     
     function animateText() {
         if (currentIndex < text.length) {
-            currentText = text[currentIndex];
-            textDisplay.textContent = currentText.slice(0, letterIndex + 1);
+            currentText = Array.from(text[currentIndex]);
+            textDisplay.textContent = currentText.slice(0, letterIndex + 1).join('');
             letterIndex++;
     
             if (letterIndex === currentText.length) {
