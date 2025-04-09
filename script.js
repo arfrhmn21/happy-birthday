@@ -9,9 +9,9 @@ content[0].style.display = "none";
 content[1].style.display = "none";
 
 const text = [
-    "Haloo",
-    "Sekarang 30 April yaa?",
-    "Selamat ulang tahun Teh Fahiraa🥳",
+    "Haloo Teh Fahiraa👋",
+    "Ada yang spesial yaa hari ini?",
+    "Selamat ulang tahun🥳",
     "Semoga lancar kuliahnyaa",
     "Selalu dikelilingi orang baikk",
     "Sehat selalu yaa Tehh :)"
@@ -50,7 +50,7 @@ function start() {
             if (letterIndex === currentText.length) {
                 currentIndex++;
                 letterIndex = 0;
-                setTimeout(animateText, 2000);
+                setTimeout(animateText, 1830);
             } else {
                 setTimeout(animateText, 100);
             }
@@ -82,8 +82,7 @@ function start() {
     }, 35000);
     
     setTimeout(() => {
-        textDisplay.innerHTML = "Klik lanjut yaa...";
-    
+        textDisplay.style.display = "none";
         const btnNew = document.createElement('button');
     
         btnNew.innerHTML = "Lanjut";
