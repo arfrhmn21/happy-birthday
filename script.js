@@ -9,12 +9,12 @@ content[0].style.display = "none";
 content[1].style.display = "none";
 
 const text = [
-    "Haloo teh",
+    "Haloo",
     "Sekarang 30 April yaa?",
-    "Selamat ulang tahun Teh Fahiraa",
-    "Doa terbaik pokoknya buat teteh",
+    "Selamat ulang tahun Teh Fahiraa🥳",
     "Semoga lancar kuliahnyaa",
-    "Berkah rezekinyaa, sehat selalu yaa"
+    "Selalu dikelilingi orang baikk",
+    "Sehat selalu yaa Tehh :)"
 ];
 
 function start() {
@@ -50,7 +50,7 @@ function start() {
             if (letterIndex === currentText.length) {
                 currentIndex++;
                 letterIndex = 0;
-                setTimeout(animateText, 1750);
+                setTimeout(animateText, 2000);
             } else {
                 setTimeout(animateText, 100);
             }
@@ -82,10 +82,7 @@ function start() {
     }, 35000);
     
     setTimeout(() => {
-        textDisplay.innerHTML = `
-        Yahh udah selesai:(<br><br>
-        Klik lanjut yaa...
-        `;
+        textDisplay.innerHTML = "Klik lanjut yaa...";
     
         const btnNew = document.createElement('button');
     
@@ -98,7 +95,7 @@ function start() {
     
         function openWhatsApp() {
             var phoneNumber = "+62895703181535";
-            var message = "Halooo";
+            var message = "Halo Ariff";
             var whatsappURL = "whatsapp://send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
     
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -116,5 +113,3 @@ btnStart.onclick = () => {
     audio.play();
     start();
 }
-
-
