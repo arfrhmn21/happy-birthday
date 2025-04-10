@@ -17,6 +17,21 @@ const text = [
     "Sehat selalu yaa Tehh :)"
 ];
 
+const today = new Date();
+const day = today.getDate();
+const month = today.getMonth() + 1;
+if (day === 30 && month === 4) {
+    btnStart.onclick = () => {
+        audio.play();
+        start();
+    };
+} else {
+    const overlayStart = document.querySelector(".overlay-start");
+    overlayStart.innerHTML = `
+        <p class="locked-message">Hanya bisa diakses<br>pada tanggal 30 April.</p>
+    `;
+}
+
 function start() {
     content[0].style.display = "flex";
     content[1].style.display = "flex";
@@ -104,11 +119,4 @@ function start() {
             }
         }
     }, 38000);
-    
-}
-
-
-btnStart.onclick = () => {
-    audio.play();
-    start();
 }
